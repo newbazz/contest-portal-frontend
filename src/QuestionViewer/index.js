@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-	import Component from 'inferno-component';
-=======
 import { Link } from 'inferno-router';
 import Component from 'inferno-component';
->>>>>>> d90c179401db689c5e7af78fd6d736f19e37dae2
 
 class QuestionViewer extends Component {
   state = {
@@ -29,9 +25,6 @@ class QuestionViewer extends Component {
         <p>
           {question.body}
         </p>
-<<<<<<< HEAD
-        <input type="button" class="next" value="NEXT"/>&nbsp;<input type="button" class="prev" value="PREVIOUS"/>
-=======
         {
           qno!==1 &&
             <Link className="button float-left" to={`/question/${qno-1}`}>
@@ -44,9 +37,7 @@ class QuestionViewer extends Component {
               Next
             </Link>
         }
->>>>>>> d90c179401db689c5e7af78fd6d736f19e37dae2
       </div>
-       
     )
   }
 }
