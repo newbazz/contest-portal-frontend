@@ -17,11 +17,4 @@ class App extends Component {
 
 }
 
-class App extends Component {
-app.post('/question/next', function (req, res) {
-    var req=req+1;
-    var url='/question/'+String(req)
-    return res.redirect(url);
-}); 
-}
 export default App;
